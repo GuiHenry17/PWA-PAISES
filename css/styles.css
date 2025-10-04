@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+
+header {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: #5ebc5b;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+main{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+    grid-auto-rows: row dense;
+}
+
+.country{
+    padding: 1rem;
+    box-shadow: 3px 3px 3px 4px rgb(216, 216, 216);
+}
+
+.country a,
+country a:visited {
+    text-decoration: none;
+    color: inherit;
+    font-size: 10px;
+}
+
+input#postParam {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input#postParam:focus {
+    border-color: #4fa55a; 
+    background-color: #f8f8f8;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4fa592;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #66c398; 
+    transform: translateY(-2px); 
+}
+
+button:active {
+    background-color: #6e47a0; 
+    transform: translateY(0);
+}
